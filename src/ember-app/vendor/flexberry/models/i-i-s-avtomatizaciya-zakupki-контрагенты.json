@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISAvtomatizaciya_zakupkiКонтрагенты",
+  "modelName": "i-i-s-avtomatizaciya-zakupki-контрагенты",
+  "className": "Контрагенты",
+  "nameSpace": "IIS.Avtomatizaciya_zakupki",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "контрагент",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КонтрагентыE",
+      "modelName": "i-i-s-avtomatizaciya-zakupki-контрагенты",
+      "attrs": [
+        {
+          "name": "контрагент",
+          "caption": "Контрагент",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "КонтрагентыL",
+      "modelName": "i-i-s-avtomatizaciya-zakupki-контрагенты",
+      "attrs": [
+        {
+          "name": "контрагент",
+          "caption": "Контрагент",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

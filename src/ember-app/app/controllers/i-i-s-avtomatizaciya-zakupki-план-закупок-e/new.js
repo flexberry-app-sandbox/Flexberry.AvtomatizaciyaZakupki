@@ -1,0 +1,4 @@
+import IISAvtomatizaciya_zakupkiПланЗакупокEController from '../i-i-s-avtomatizaciya-zakupki-план-закупок-e';
+
+var IISAvtomatizaciya_zakupkiПланЗакупокENewController = IISAvtomatizaciya_zakupkiПланЗакупокEController;
+export default IISAvtomatizaciya_zakupkiПланЗакупокENewController;

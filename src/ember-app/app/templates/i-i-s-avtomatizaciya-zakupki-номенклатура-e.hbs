@@ -1,0 +1,73 @@
+<h3 class="ui header">{{t "forms.i-i-s-avtomatizaciya-zakupki-номенклатура-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.номенклатура
+      class=(if (v-get validationModel "номенклатура" "isInvalid") "error")
+      label=(t "forms.i-i-s-avtomatizaciya-zakupki-номенклатура-e.номенклатура-caption")
+      data-test-i-i-s-avtomatizaciya-zakupki-номенклатура-e-номенклатура=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "номенклатура" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-avtomatizaciya-zakupki-номенклатура-e.контрагенты-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.контрагенты
+      displayAttributeName="контрагент"
+      autocomplete=true
+      relationName="контрагенты"
+      projection="КонтрагентыL"
+      title=(t "forms.i-i-s-avtomatizaciya-zakupki-номенклатура-e.контрагенты-caption")
+      readonly=readonly
+      componentName="контрагентыLookup"
+      class=(if (v-get validationModel "контрагенты" "isInvalid") "error")
+      data-test-i-i-s-avtomatizaciya-zakupki-номенклатура-e-контрагенты=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "контрагенты" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-avtomatizaciya-zakupki-номенклатура-e.единицыИзмер-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.единицыИзмер
+      displayAttributeName="единицаИзмер"
+      autocomplete=true
+      relationName="единицыИзмер"
+      projection="ЕдиницыИзмерL"
+      title=(t "forms.i-i-s-avtomatizaciya-zakupki-номенклатура-e.единицыИзмер-caption")
+      readonly=readonly
+      componentName="единицыИзмерLookup"
+      class=(if (v-get validationModel "единицыИзмер" "isInvalid") "error")
+      data-test-i-i-s-avtomatizaciya-zakupki-номенклатура-e-единицыИзмер=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "единицыИзмер" "message")}}
+  </div>
+</form>

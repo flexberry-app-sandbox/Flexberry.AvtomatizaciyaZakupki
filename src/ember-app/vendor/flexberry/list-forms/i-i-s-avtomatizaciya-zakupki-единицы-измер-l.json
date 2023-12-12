@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-avtomatizaciya-zakupki-единицы-измер-e",
+  "editForm": "i-i-s-avtomatizaciya-zakupki-единицы-измер-e",
+  "external": false,
+  "caption": "Единицы измер",
+  "name": "IISAvtomatizaciya_zakupkiЕдиницыИзмерL",
+  "className": "ЕдиницыИзмерL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-avtomatizaciya-zakupki-единицы-измер",
+      "modelProjection": "ЕдиницыИзмерL"
+    }
+  ]
+}

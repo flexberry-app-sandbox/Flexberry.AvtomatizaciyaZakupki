@@ -1,0 +1,47 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Контрагенты",
+      "projection": "КонтрагентыL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Организации",
+      "projection": "ОрганизацииL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Склады",
+      "projection": "СкладыL",
+      "detailModelName": null
+    },
+    {
+      "master": "номенклатура",
+      "displayAttributeName": "номенклатура",
+      "required": true,
+      "relationName": "Заказ.Номенклатура",
+      "projection": "НоменклатураL",
+      "detailModelName": "i-i-s-avtomatizaciya-zakupki-т-ч-заказ"
+    }
+  ],
+  "external": false,
+  "caption": "Отчет о закупках",
+  "name": "IISAvtomatizaciya_zakupkiОтчетОЗакупкахE",
+  "className": "ОтчетОЗакупкахE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-avtomatizaciya-zakupki-отчет-о-закупках",
+      "modelProjection": "ОтчетОЗакупкахE"
+    }
+  ]
+}

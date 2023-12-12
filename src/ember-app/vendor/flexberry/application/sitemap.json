@@ -1,0 +1,95 @@
+﻿{
+  "applicationCaption": "Avtomatizaciya_zakupki",
+  "applicationTitle": "Avtomatizaciya_zakupki",
+  "items": [
+    {
+      "link": null,
+      "menuName": "автоматизация-закупок",
+      "caption": "Автоматизация закупок",
+      "title": "Автоматизация закупок",
+      "children": [
+        {
+          "link": null,
+          "menuName": "справочники",
+          "caption": "Справочники",
+          "title": "Справочники",
+          "children": [
+            {
+              "link": "i-i-s-avtomatizaciya-zakupki-организации-l",
+              "menuName": null,
+              "caption": "Организации",
+              "title": "",
+              "children": null
+            },
+            {
+              "link": "i-i-s-avtomatizaciya-zakupki-контрагенты-l",
+              "menuName": null,
+              "caption": "Контрагенты",
+              "title": "",
+              "children": null
+            },
+            {
+              "link": "i-i-s-avtomatizaciya-zakupki-номенклатура-l",
+              "menuName": null,
+              "caption": "Номенклатура",
+              "title": "",
+              "children": null
+            },
+            {
+              "link": "i-i-s-avtomatizaciya-zakupki-склады-l",
+              "menuName": null,
+              "caption": "Склады",
+              "title": "",
+              "children": null
+            },
+            {
+              "link": "i-i-s-avtomatizaciya-zakupki-единицы-измер-l",
+              "menuName": null,
+              "caption": "Единицы измер",
+              "title": "",
+              "children": null
+            }
+          ]
+        },
+        {
+          "link": null,
+          "menuName": "документы",
+          "caption": "Документы",
+          "title": "Документы",
+          "children": [
+            {
+              "link": "i-i-s-avtomatizaciya-zakupki-план-закупок-l",
+              "menuName": null,
+              "caption": "План закупок",
+              "title": "",
+              "children": null
+            },
+            {
+              "link": "i-i-s-avtomatizaciya-zakupki-заказ-пост-l",
+              "menuName": null,
+              "caption": "Заказ пост",
+              "title": "",
+              "children": null
+            }
+          ]
+        },
+        {
+          "link": null,
+          "menuName": "отчеты",
+          "caption": "Отчеты",
+          "title": "Отчеты",
+          "children": [
+            {
+              "link": "i-i-s-avtomatizaciya-zakupki-отчет-о-закупках-l",
+              "menuName": null,
+              "caption": "Отчет о закупках",
+              "title": "",
+              "children": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

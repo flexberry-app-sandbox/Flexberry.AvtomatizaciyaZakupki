@@ -1,0 +1,135 @@
+﻿{
+  "name": "IISAvtomatizaciya_zakupkiПлан",
+  "modelName": "i-i-s-avtomatizaciya-zakupki-план",
+  "className": "План",
+  "nameSpace": "IIS.Avtomatizaciya_zakupki",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "количество",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "этоУслуга",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "номенклатура",
+      "relatedTo": "i-i-s-avtomatizaciya-zakupki-номенклатура",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "планЗакупок",
+      "relatedTo": "i-i-s-avtomatizaciya-zakupki-план-закупок",
+      "inverse": "план"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ПланE",
+      "modelName": "i-i-s-avtomatizaciya-zakupki-план",
+      "attrs": [
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "этоУслуга",
+          "caption": "Это услуга",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Номенклатура",
+          "lookupValueField": "номенклатура",
+          "relationName": "Номенклатура",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "Номенклатура.ЕдиницыИзмер",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "единицаИзмер",
+                  "caption": "Единица измерения",
+                  "hidden": false,
+                  "index": 2
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "единицыИзмер",
+              "relatedTo": "i-i-s-avtomatizaciya-zakupki-единицы-измер",
+              "inverse": null
+            },
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "Номенклатура.Контрагенты",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "контрагент",
+                  "caption": "Контрагент",
+                  "hidden": false,
+                  "index": 5
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "контрагенты",
+              "relatedTo": "i-i-s-avtomatizaciya-zakupki-контрагенты",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номенклатура",
+              "caption": "Номенклатура",
+              "hidden": true,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Номенклатура",
+          "name": "номенклатура",
+          "relatedTo": "i-i-s-avtomatizaciya-zakupki-номенклатура",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

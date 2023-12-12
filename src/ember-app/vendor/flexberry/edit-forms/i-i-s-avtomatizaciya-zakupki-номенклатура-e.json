@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Контрагенты",
+      "projection": "КонтрагентыL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ЕдиницыИзмер",
+      "projection": "ЕдиницыИзмерL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Номенклатура",
+  "name": "IISAvtomatizaciya_zakupkiНоменклатураE",
+  "className": "НоменклатураE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-avtomatizaciya-zakupki-номенклатура",
+      "modelProjection": "НоменклатураE"
+    }
+  ]
+}

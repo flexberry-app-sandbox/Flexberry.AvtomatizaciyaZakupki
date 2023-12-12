@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-avtomatizaciya-zakupki-план-закупок-e",
+  "editForm": "i-i-s-avtomatizaciya-zakupki-план-закупок-e",
+  "external": false,
+  "caption": "План закупок",
+  "name": "IISAvtomatizaciya_zakupkiПланЗакупокL",
+  "className": "ПланЗакупокL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-avtomatizaciya-zakupki-план-закупок",
+      "modelProjection": "ПланЗакупокL"
+    }
+  ]
+}

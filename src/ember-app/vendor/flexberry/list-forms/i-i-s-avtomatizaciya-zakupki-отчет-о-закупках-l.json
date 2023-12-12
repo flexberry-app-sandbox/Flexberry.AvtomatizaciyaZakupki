@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-avtomatizaciya-zakupki-отчет-о-закупках-e",
+  "editForm": "i-i-s-avtomatizaciya-zakupki-отчет-о-закупках-e",
+  "external": false,
+  "caption": "Отчет о закупках",
+  "name": "IISAvtomatizaciya_zakupkiОтчетОЗакупкахL",
+  "className": "ОтчетОЗакупкахL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-avtomatizaciya-zakupki-отчет-о-закупках",
+      "modelProjection": "ОтчетОЗакупкахL"
+    }
+  ]
+}

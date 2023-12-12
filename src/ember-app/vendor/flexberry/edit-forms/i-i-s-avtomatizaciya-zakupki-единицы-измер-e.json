@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Единицы измер",
+  "name": "IISAvtomatizaciya_zakupkiЕдиницыИзмерE",
+  "className": "ЕдиницыИзмерE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-avtomatizaciya-zakupki-единицы-измер",
+      "modelProjection": "ЕдиницыИзмерE"
+    }
+  ]
+}

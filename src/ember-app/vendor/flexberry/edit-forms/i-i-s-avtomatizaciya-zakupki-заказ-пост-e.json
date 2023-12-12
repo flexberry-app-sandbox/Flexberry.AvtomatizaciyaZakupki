@@ -1,0 +1,47 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Контрагенты",
+      "projection": "КонтрагентыL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Организации",
+      "projection": "ОрганизацииL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Склады",
+      "projection": "СкладыL",
+      "detailModelName": null
+    },
+    {
+      "master": "номенклатура",
+      "displayAttributeName": "номенклатура",
+      "required": true,
+      "relationName": "Заказ.Номенклатура",
+      "projection": "НоменклатураL",
+      "detailModelName": "i-i-s-avtomatizaciya-zakupki-т-ч-заказ"
+    }
+  ],
+  "external": false,
+  "caption": "Заказ пост",
+  "name": "IISAvtomatizaciya_zakupkiЗаказПостE",
+  "className": "ЗаказПостE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-avtomatizaciya-zakupki-заказ-пост",
+      "modelProjection": "ЗаказПостE"
+    }
+  ]
+}
